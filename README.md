@@ -14,3 +14,7 @@ mvn install
 
 Usage:
 java -jar SnykJasperReport-X.Y-jar-with-dependencies.jar </path/to/csv/file.csv>
+
+Example:
+mvn install
+java -jar target/SnykJasperReport-1.0-SNAPSHOT-jar-with-dependencies.jar samples/small.csv
