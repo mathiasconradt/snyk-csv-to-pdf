@@ -82,7 +82,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a57c2e5-f2e9-46ad-9a7a-91ed19247f39"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Severity]]></text>
 			</staticText>
@@ -91,7 +91,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d493df8e-a604-4a06-b0f6-53db30091d56"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Prio Score]]></text>
 			</staticText>
@@ -100,7 +100,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3876bbfe-5dfd-4f2f-be02-3f8613f2f0ea"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Title]]></text>
 			</staticText>
@@ -109,7 +109,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7ddc7ae4-61f8-4c53-9692-457f26499486"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CVE]]></text>
 			</staticText>
@@ -118,7 +118,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="10793cdf-807d-48d7-bd93-5ffa223286ca"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CWE]]></text>
 			</staticText>
@@ -127,7 +127,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="534d38ae-f048-4f22-b6ec-c60add502f5f"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Project Name]]></text>
 			</staticText>
@@ -136,7 +136,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6171cc5c-5c8e-4efe-8b56-d55079c1c27d"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Exploit Maturity]]></text>
 			</staticText>
@@ -145,7 +145,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5d2d9a64-3ebb-4cd4-b5ee-a05df052efff"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Autofixable]]></text>
 			</staticText>
@@ -154,7 +154,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d6d2081-334a-48a0-81b8-f5e4ff8d743a"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[First Introduced]]></text>
 			</staticText>
@@ -163,7 +163,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55401acb-3920-4d9d-aef4-e799d2479be3"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Product]]></text>
 			</staticText>
@@ -178,7 +178,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a57c2e5-f2e9-46ad-9a7a-91ed19247f39"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{ISSUE_SEVERITY}]]></textFieldExpression>
 				</textField>
@@ -187,7 +187,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d493df8e-a604-4a06-b0f6-53db30091d56"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{PRIORITY_SCORE}]]></textFieldExpression>
 				</textField>
@@ -196,7 +196,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3876bbfe-5dfd-4f2f-be02-3f8613f2f0ea"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{PROBLEM_TITLE}]]></textFieldExpression>
 					<hyperlinkReferenceExpression><![CDATA[$F{ISSUE_URL}]]></hyperlinkReferenceExpression>
@@ -206,7 +206,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7ddc7ae4-61f8-4c53-9692-457f26499486"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{CVE}]]></textFieldExpression>
 				</textField>
@@ -215,7 +215,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="10793cdf-807d-48d7-bd93-5ffa223286ca"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{CWE}]]></textFieldExpression>
 				</textField>
@@ -224,7 +224,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="534d38ae-f048-4f22-b6ec-c60add502f5f"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{PROJECT_NAME}]]></textFieldExpression>
 					<hyperlinkReferenceExpression><![CDATA[$F{PROJECT_URL}]]></hyperlinkReferenceExpression>
@@ -234,7 +234,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6171cc5c-5c8e-4efe-8b56-d55079c1c27d"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{EXPLOIT_MATURITY}]]></textFieldExpression>
 				</textField>
@@ -243,7 +243,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5d2d9a64-3ebb-4cd4-b5ee-a05df052efff"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{AUTOFIXABLE}]]></textFieldExpression>
 				</textField>
@@ -252,7 +252,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d6d2081-334a-48a0-81b8-f5e4ff8d743a"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{FIRST_INTRODUCED}]]></textFieldExpression>
 				</textField>
@@ -261,7 +261,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55401acb-3920-4d9d-aef4-e799d2479be3"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{PRODUCT_NAME}]]></textFieldExpression>
 				</textField>

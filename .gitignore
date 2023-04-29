@@ -1,7 +1,11 @@
 # Compiled class file
 *.class
 
+# IDE files
 .idea
+
+# Backup files
+*.bak
 
 # Log file
 *.log

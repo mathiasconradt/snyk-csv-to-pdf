@@ -1,36 +1,19 @@
-FROM azul/zulu-openjdk-alpine:11 as packager
-
-RUN { \
-        java --version ; \
-        echo "jlink version:" && \
-        jlink --version ; \
-    }
-
-ENV JAVA_MINIMAL=/opt/jre
-
-# build modules distribution
-RUN jlink \
-    --verbose \
-    --add-modules \
-        java.base,java.sql,java.naming,java.desktop,java.management,java.security.jgss,java.instrument \
-        # java.naming - javax/naming/NamingException
-        # java.desktop - java/beans/PropertyEditorSupport
-        # java.management - javax/management/MBeanServer
-        # java.security.jgss - org/ietf/jgss/GSSException
-        # java.instrument - java/lang/instrument/IllegalClassFormatException
-    --compress 2 \
-    --strip-debug \
-    --no-header-files \
-    --no-man-pages \
-    --output "$JAVA_MINIMAL"
-
 # Second stage, add only our minimal "JRE" distr and our app
-FROM alpine
+FROM amazoncorretto
 
-ENV JAVA_MINIMAL=/opt/jre
-ENV PATH="$PATH:$JAVA_MINIMAL/bin"
+#ENV JAVA_MINIMAL=/opt/jre
+#ENV PATH="$PATH:$JAVA_MINIMAL/bin"
 
-COPY --from=packager "$JAVA_MINIMAL" "$JAVA_MINIMAL"
+# RUN sudo yum update
+# RUN yum install -y curl cabextract xorg-x11-font-utils fontconfig
+RUN yum install -y wget
+RUN wget http://www.itzgeek.com/msttcore-fonts-2.0-3.noarch.rpm
+RUN rpm -Uvh msttcore-fonts-2.0-3.noarch.rpm
+#RUN wget http://mirror.centos.org/centos/7/os/x86_64/Packages/liberation-narrow-fonts-1.07.2-16.el7.noarch.rpm
+#RUN rpm -Uvh liberation-narrow-fonts-1.07.2-16.el7.noarch.rpm
+# RUN rpm -Va --nofiles --nodigest https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+
+#COPY --from=packager "$JAVA_MINIMAL" "$JAVA_MINIMAL"
 COPY target/snyk-csv-to-pdf-1.0-jar-with-dependencies.jar snyk-csv-to-pdf.jar
 COPY target/classes/snyk.jrxml snyk.jrxml
 
