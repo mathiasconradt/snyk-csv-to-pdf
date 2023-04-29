@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<csvDataAdapter class="net.sf.jasperreports.data.csv.CsvDataAdapterImpl">
+  <name>Sample CSV Report Medium</name>
+  <dataFile type="repositoryDataLocation">
+    <location>/Users/mconradt/JaspersoftWorkspace/SnykJasperReport/samples/medium.csv</location>
+  </dataFile>
+  <recordDelimiter>
+</recordDelimiter>
+  <fieldDelimiter>,</fieldDelimiter>
+  <useFirstRowAsHeader>true</useFirstRowAsHeader>
+  <locale>en_DE</locale>
+  <timeZone>Europe/Berlin</timeZone>
+  <queryExecuterMode>false</queryExecuterMode>
+  <columnNames>ISSUE_SEVERITY_RANK</columnNames>
+  <columnNames>ISSUE_SEVERITY</columnNames>
+  <columnNames>PRIORITY_SCORE</columnNames>
+  <columnNames>PROBLEM_TITLE</columnNames>
+  <columnNames>CVE</columnNames>
+  <columnNames>CWE</columnNames>
+  <columnNames>PROJECT_NAME</columnNames>
+  <columnNames>PROJECT_URL</columnNames>
+  <columnNames>EXPLOIT_MATURITY</columnNames>
+  <columnNames>AUTOFIXABLE</columnNames>
+  <columnNames>FIRST_INTRODUCED</columnNames>
+  <columnNames>PRODUCT_NAME</columnNames>
+  <columnNames>ISSUE_URL</columnNames>
+  <columnNames>ISSUE_STATUS_INDICATOR</columnNames>
+  <columnNames>ISSUE_TYPE</columnNames>
+</csvDataAdapter>
