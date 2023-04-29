@@ -31,9 +31,13 @@ ENV JAVA_MINIMAL=/opt/jre
 ENV PATH="$PATH:$JAVA_MINIMAL/bin"
 
 COPY --from=packager "$JAVA_MINIMAL" "$JAVA_MINIMAL"
-COPY target/snyk-to-csv-converter-1.0-jar-with-dependencies.jar snyk-to-csv-converter.jar
+COPY target/snyk-csv-to-pdf-1.0-jar-with-dependencies.jar snyk-csv-to-pdf.jar
+COPY target/classes/snyk.jrxml snyk.jrxml
 
-ENTRYPOINT ["java","-jar","/snyk-to-csv-converter.jar"]
+# VOLUME /data
+
+ENTRYPOINT ["java","-jar","/snyk-csv-to-pdf.jar"]
+# CMD [ ${INPUT} ]
 
 #EXPOSE 8080
 #CMD [ "-jar", "/app.jar" ]

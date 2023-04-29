@@ -17,6 +17,11 @@ It takes a CSV file in (manually downloaded from Snyk New Reporting UI), and gen
 mvn install
 ```
 
+```
+docker build -t snyk-csv-to-pdf-converter .
+docker run -v $(PWD)/samples:/data/ snyk-csv-to-pdf-converter /data/medium.csv
+```
+
 ## Usage
 ```
 java -jar snyk-to-csv-converter-x.y-jar-with-dependencies.jar </path/to/csv/file.csv>

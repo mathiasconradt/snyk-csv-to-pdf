@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.snyk</groupId>
-    <artifactId>snyk-csv-to-pdf-converter</artifactId>
+    <artifactId>snyk-csv-to-pdf</artifactId>
     <version>1.0</version>
 
     <properties>

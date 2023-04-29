@@ -24,7 +24,7 @@ public class Main {
         if (args.length == 0) {
             System.out.println("Missing argument.");
             System.out.println("Usage:");
-            System.out.println("java -jar SnykJasperReport-X.Y-jar-with-dependencies.jar </path/to/csv/file.csv>");
+            System.out.println("java -jar snyk-csv-to-pdf-x.y-jar-with-dependencies.jar </path/to/csv/file.csv>");
             System.exit(1);
             System.out.println();
         } else if (!args[0].toLowerCase().endsWith(".csv")) {
