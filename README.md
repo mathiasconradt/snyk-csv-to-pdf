@@ -40,3 +40,13 @@ docker build -t snyk-csv-to-pdf-converter .
 ```
 docker run -v $(PWD)/samples:/data/ snyk-csv-to-pdf-converter /data/medium.csv
 ```
+
+## Disclaimer
+
+This project is not an official Snyk offering and not officially supported by Snyk.
+Use are your own risk.
+
+## Contact
+
+@mathiasconradt
+@ened
