@@ -31,10 +31,9 @@ ENV JAVA_MINIMAL=/opt/jre
 ENV PATH="$PATH:$JAVA_MINIMAL/bin"
 
 COPY --from=packager "$JAVA_MINIMAL" "$JAVA_MINIMAL"
-# COPY "build/libs/spring-boot-demo.jar" "/app.jar"
-COPY target/SnykJasperReport-1.0-SNAPSHOT-jar-with-dependencies.jar SnykJasperReport-1.0-SNAPSHOT-jar-with-dependencies.jar
+COPY target/snyk-to-csv-converter-1.0-jar-with-dependencies.jar snyk-to-csv-converter.jar
 
-ENTRYPOINT ["java","-jar","/SnykJasperReport-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+ENTRYPOINT ["java","-jar","/snyk-to-csv-converter.jar"]
 
 #EXPOSE 8080
 #CMD [ "-jar", "/app.jar" ]
