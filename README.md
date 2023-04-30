@@ -1,7 +1,10 @@
 # Snyk CVS-to-PDF Report Converter
 
 PoC to showcase how we envision a performant pdf report generation:
-- fast performing (2600 issues report: 5 seconds; 100k issues report: 34 seconds)
+- fast performing 
+  - 400 issues report: 2 seconds (on Mac Book Pro)
+  - 2600 issues report: 4 seconds (on Mac Book Pro)
+  - 100.000 issues report: 30 seconds (on Mac Book Pro)
 - proper page breaks
 - page numbers
 - using a report/template engine (Jasper Reports)
