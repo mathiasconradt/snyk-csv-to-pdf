@@ -30,12 +30,14 @@ You can find two sample PDF reports under
 mvn install
 ```
 
+The build creates a fat jar with all dependencies included.
+
 ## Usage
 ```
 java -jar snyk-csv-to-pdf-x.y-jar-with-dependencies.jar </path/to/csv/file.csv>
 ```
 
-Make sure that either the report template snyk.jrxml or snyk.jasper (compiled report) exists in the current directory.
+Make sure that either the report template `snyk.jrxml` or the compiled report `snyk.jasper` exists in the current directory.
 
 Example:
 ```
