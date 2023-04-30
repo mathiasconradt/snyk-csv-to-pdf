@@ -20,13 +20,16 @@ mvn install
 
 ## Usage
 ```
-java -jar snyk-to-csv-converter-x.y-jar-with-dependencies.jar </path/to/csv/file.csv>
+java -jar snyk-csv-to-pdf-x.y-jar-with-dependencies.jar </path/to/csv/file.csv>
 ```
+
+Make sure that either the report template snyk.jrxml or snyk.jasper (compiled report) exists in the current directory.
 
 Example:
 ```
 mvn install
-java -jar target/snyk-to-csv-converter-1.0-jar-with-dependencies.jar samples/small.csv
+cd design
+java -jar ../target/snyk-csv-to-pdf-1.0-jar-with-dependencies.jar ../samples/small.csv
 ```
 
 ## Docker
@@ -44,5 +47,5 @@ docker run -v $(PWD)/samples:/data/ snyk-csv-to-pdf-converter /data/medium.csv
 
 ## Contact
 
-- @mathiasconradt
-- @ened
+- Mathias Conradt (@mathiasconradt)
+- Sebastian Roth (@ened)
