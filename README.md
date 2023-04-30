@@ -63,10 +63,10 @@ docker run -v $(PWD)/samples:/data/ snyk-csv-to-pdf /data/medium.csv
 
 If you want to adjust the report template (snyk.jrxml), you can download the Jaspersoft Studio Community Edition from https://community.jaspersoft.com/project/jaspersoft-studio/releases
 
-Open the snyk.jrxml and for testing with sample data, adjust the path to the CSV file in the data adapter (/design/DataAdapter.jrdax) to point to the right path on your local machine.
-You can use /samples/small.csv as a sample CSV file.
+Open the `/design/snyk.jrxml` and for testing with sample data, adjust the path to the CSV file in the data adapter (`/design/DataAdapter.jrdax`) to point to the right path on your local machine.
+You can use `/samples/small.csv` as a sample CSV file.
 
-When done editing the template, make sure to compile it to snyk.jasper
+When done editing the template, make sure to compile it to `snyk.jasper` (right-click on `snyk.jrxml` > JasperReports > Compile Report).
 
 ![compiling](docs/jasperstudio1.png "Compiling from .jrxml to .jasper")
 
