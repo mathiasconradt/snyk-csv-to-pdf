@@ -78,92 +78,92 @@
 	<columnHeader>
 		<band height="18" splitType="Stretch">
 			<staticText>
-				<reportElement style="Column header" x="0" y="0" width="30" height="18" forecolor="#000000" uuid="9a0e1b88-001a-4e7e-9716-28088a363f59">
+				<reportElement style="Column header" x="0" y="0" width="36" height="18" forecolor="#000000" uuid="9a0e1b88-001a-4e7e-9716-28088a363f59">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a57c2e5-f2e9-46ad-9a7a-91ed19247f39"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Severity]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="33" y="0" width="37" height="18" forecolor="#000000" uuid="18ce3041-009a-40c1-b6b8-2e09136fc0b2">
+				<reportElement style="Column header" x="36" y="0" width="24" height="18" forecolor="#000000" uuid="18ce3041-009a-40c1-b6b8-2e09136fc0b2">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d493df8e-a604-4a06-b0f6-53db30091d56"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Prio Score]]></text>
+				<text><![CDATA[Prio]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="74" y="0" width="116" height="18" forecolor="#000000" uuid="4e8d6148-3195-42ea-ae16-3b4dd6d38d34">
+				<reportElement style="Column header" x="64" y="0" width="116" height="18" forecolor="#000000" uuid="4e8d6148-3195-42ea-ae16-3b4dd6d38d34">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3876bbfe-5dfd-4f2f-be02-3f8613f2f0ea"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Title]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="192" y="0" width="88" height="18" forecolor="#000000" uuid="350f159b-7d90-465e-84b7-0e8c1a892cf8">
+				<reportElement style="Column header" x="182" y="0" width="88" height="18" forecolor="#000000" uuid="350f159b-7d90-465e-84b7-0e8c1a892cf8">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7ddc7ae4-61f8-4c53-9692-457f26499486"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CVE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="283" y="0" width="53" height="18" forecolor="#000000" uuid="a4d1e2d7-1d44-4119-9c9e-1339fd82da67">
+				<reportElement style="Column header" x="273" y="0" width="53" height="18" forecolor="#000000" uuid="a4d1e2d7-1d44-4119-9c9e-1339fd82da67">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="10793cdf-807d-48d7-bd93-5ffa223286ca"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CWE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="340" y="0" width="240" height="18" forecolor="#000000" uuid="7b982810-62a9-4d67-ab7a-14db53b0a424">
+				<reportElement style="Column header" x="328" y="0" width="240" height="18" forecolor="#000000" uuid="7b982810-62a9-4d67-ab7a-14db53b0a424">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="534d38ae-f048-4f22-b6ec-c60add502f5f"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Project Name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="584" y="0" width="53" height="18" forecolor="#000000" uuid="4ab539a8-3958-40b0-95b7-4127696137af">
+				<reportElement style="Column header" x="573" y="0" width="53" height="18" forecolor="#000000" uuid="4ab539a8-3958-40b0-95b7-4127696137af">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6171cc5c-5c8e-4efe-8b56-d55079c1c27d"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Exploit Maturity]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="637" y="0" width="53" height="18" forecolor="#000000" uuid="64bf5bf1-1999-411c-925d-6a23f8782b67">
+				<reportElement style="Column header" x="631" y="0" width="53" height="18" forecolor="#000000" uuid="64bf5bf1-1999-411c-925d-6a23f8782b67">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5d2d9a64-3ebb-4cd4-b5ee-a05df052efff"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Autofixable]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="690" y="0" width="53" height="18" forecolor="#000000" uuid="3603cc30-4cf3-4f1d-9916-a8ca383f001e">
+				<reportElement style="Column header" x="687" y="0" width="53" height="18" forecolor="#000000" uuid="3603cc30-4cf3-4f1d-9916-a8ca383f001e">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d6d2081-334a-48a0-81b8-f5e4ff8d743a"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
-				<text><![CDATA[First Introduced]]></text>
+				<text><![CDATA[First Introduction]]></text>
 			</staticText>
 			<staticText>
 				<reportElement style="Column header" x="743" y="0" width="53" height="18" forecolor="#000000" uuid="1892d43e-d510-4f15-b69f-547d7c42e769">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55401acb-3920-4d9d-aef4-e799d2479be3"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial Unicode MS" size="8" isBold="true"/>
+					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Product]]></text>
 			</staticText>
@@ -174,85 +174,85 @@
 			<frame>
 				<reportElement style="Row" mode="Opaque" x="0" y="0" width="797" height="18" uuid="34a2ae4b-4055-476b-8676-d499f6af510b"/>
 				<textField textAdjust="StretchHeight">
-					<reportElement style="Detail" positionType="Float" x="0" y="0" width="30" height="18" uuid="491c6876-978e-4b38-a078-95af87032a9e">
+					<reportElement style="Detail" positionType="Float" x="0" y="0" width="36" height="18" uuid="491c6876-978e-4b38-a078-95af87032a9e">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a57c2e5-f2e9-46ad-9a7a-91ed19247f39"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{ISSUE_SEVERITY}]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight">
-					<reportElement style="Detail" positionType="Float" x="33" y="0" width="37" height="18" uuid="8aa39a93-981b-476b-81c3-10fda99123b1">
+					<reportElement style="Detail" positionType="Float" x="36" y="0" width="24" height="18" uuid="8aa39a93-981b-476b-81c3-10fda99123b1">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d493df8e-a604-4a06-b0f6-53db30091d56"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{PRIORITY_SCORE}]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight" hyperlinkType="Reference" hyperlinkTarget="Blank">
-					<reportElement style="Detail" positionType="Float" x="74" y="0" width="116" height="18" uuid="d77b24bd-8ae4-4068-a3b8-aa2003209420">
+					<reportElement style="Detail" positionType="Float" x="64" y="0" width="116" height="18" uuid="d77b24bd-8ae4-4068-a3b8-aa2003209420">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3876bbfe-5dfd-4f2f-be02-3f8613f2f0ea"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{PROBLEM_TITLE}]]></textFieldExpression>
 					<hyperlinkReferenceExpression><![CDATA[$F{ISSUE_URL}]]></hyperlinkReferenceExpression>
 				</textField>
 				<textField textAdjust="StretchHeight">
-					<reportElement style="Detail" positionType="Float" x="192" y="0" width="88" height="18" uuid="273d88c8-e50e-41ac-993b-6a0cf955bdc4">
+					<reportElement style="Detail" positionType="Float" x="182" y="0" width="88" height="18" uuid="273d88c8-e50e-41ac-993b-6a0cf955bdc4">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7ddc7ae4-61f8-4c53-9692-457f26499486"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{CVE}]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight">
-					<reportElement style="Detail" positionType="Float" x="283" y="0" width="53" height="18" uuid="5b29e6ef-4984-4e4c-9fc1-3ab329da6ff0">
+					<reportElement style="Detail" positionType="Float" x="273" y="0" width="53" height="18" uuid="5b29e6ef-4984-4e4c-9fc1-3ab329da6ff0">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="10793cdf-807d-48d7-bd93-5ffa223286ca"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{CWE}]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight" hyperlinkType="Reference" hyperlinkTarget="Blank">
-					<reportElement style="Detail" positionType="Float" x="340" y="0" width="240" height="18" uuid="d2aba71f-3eb9-4506-996a-3352cf2a86df">
+					<reportElement style="Detail" positionType="Float" x="328" y="0" width="240" height="18" uuid="d2aba71f-3eb9-4506-996a-3352cf2a86df">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="534d38ae-f048-4f22-b6ec-c60add502f5f"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{PROJECT_NAME}]]></textFieldExpression>
 					<hyperlinkReferenceExpression><![CDATA[$F{PROJECT_URL}]]></hyperlinkReferenceExpression>
 				</textField>
 				<textField textAdjust="StretchHeight">
-					<reportElement style="Detail" positionType="Float" x="584" y="0" width="53" height="18" uuid="c8a253e1-ac7c-435d-8019-c4b44b681210">
+					<reportElement style="Detail" positionType="Float" x="573" y="0" width="53" height="18" uuid="c8a253e1-ac7c-435d-8019-c4b44b681210">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6171cc5c-5c8e-4efe-8b56-d55079c1c27d"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{EXPLOIT_MATURITY}]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight">
-					<reportElement style="Detail" positionType="Float" x="637" y="0" width="53" height="18" uuid="7d428ccd-145a-49d1-b043-91a13d58f1df">
+					<reportElement style="Detail" positionType="Float" x="631" y="0" width="53" height="18" uuid="7d428ccd-145a-49d1-b043-91a13d58f1df">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5d2d9a64-3ebb-4cd4-b5ee-a05df052efff"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{AUTOFIXABLE}]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight">
-					<reportElement style="Detail" positionType="Float" x="690" y="0" width="53" height="18" uuid="0d4beac2-8c5d-42a8-adfa-d26161642bd5">
+					<reportElement style="Detail" positionType="Float" x="687" y="0" width="53" height="18" uuid="0d4beac2-8c5d-42a8-adfa-d26161642bd5">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d6d2081-334a-48a0-81b8-f5e4ff8d743a"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{FIRST_INTRODUCED}]]></textFieldExpression>
 				</textField>
@@ -261,7 +261,7 @@
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55401acb-3920-4d9d-aef4-e799d2479be3"/>
 					</reportElement>
 					<textElement>
-						<font fontName="Arial Narrow" size="8"/>
+						<font fontName="Arial" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{PRODUCT_NAME}]]></textFieldExpression>
 				</textField>

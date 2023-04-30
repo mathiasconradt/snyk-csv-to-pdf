@@ -8,6 +8,13 @@ PoC to showcase how we envision a performant pdf report generation:
 
 It takes a CSV file in (manually downloaded from Snyk New Reporting UI), and generates a PDF file based on it.
 
+You can find two sample PDF reports under
+- [/samples/small.pdf](/samples/small.pdf)
+- [/samples/medium.pdf](/samples/medium.pdf)
+
+
+![sample pdf](docs/small-pdf.png "Sample PDF")
+
 ### Disclaimer
 
 This project is not an official Snyk offering and not officially supported by Snyk.
@@ -37,15 +44,26 @@ java -jar ../target/snyk-csv-to-pdf-1.0-jar-with-dependencies.jar ../samples/sma
 ### Build
 ```
 mvn install
-docker build -t snyk-csv-to-pdf-converter .
+docker build -t snyk-csv-to-pdf .
 ```
 
 ### Run
 ```
-docker run -v $(PWD)/samples:/data/ snyk-csv-to-pdf-converter /data/medium.csv
+docker run -v $(PWD)/samples:/data/ snyk-csv-to-pdf /data/medium.csv
 ```
+
+## Report Template Design
+
+If you want to adjust the report template (snyk.jrxml), you can download the Jaspersoft Studio Community Edition from https://community.jaspersoft.com/project/jaspersoft-studio/releases
+
+Open the snyk.jrxml and for testing with sample data, adjust the path to the CSV file in the data adapter (/design/DataAdapter.jrdax) to point to the right path on your local machine.
+You can use /samples/small.csv as a sample CSV file.
+
+When done editing the template, make sure to compile it to snyk.jasper
+
+![compiling](docs/jasperstudio1.png "Compiling from .jrxml to .jasper")
 
 ## Contact
 
-- Mathias Conradt (@mathiasconradt)
-- Sebastian Roth (@ened)
+- Mathias Conradt ([@mathiasconradt](https://github.com/mathiasconradt))
+- Sebastian Roth ([@ened](https://github.com/ened))
