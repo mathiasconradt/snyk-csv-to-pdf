@@ -1,5 +1,12 @@
 # Snyk CVS-to-PDF Report Converter
 
+### Disclaimer
+
+This project is not an official Snyk offering and not officially supported by Snyk.
+Use at your own risk.
+
+## Description 
+
 PoC to showcase how we envision a performant pdf report generation:
 - fast performing 
   - 400 issues report: 2 seconds (on Mac Book Pro)
@@ -17,11 +24,6 @@ You can find two sample PDF reports under
 
 
 ![sample pdf](docs/small-pdf.png "Sample PDF")
-
-### Disclaimer
-
-This project is not an official Snyk offering and not officially supported by Snyk.
-Use are your own risk.
 
 ## Build
 ```
