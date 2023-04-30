@@ -15,7 +15,8 @@ RUN rpm -Uvh msttcore-fonts-2.0-3.noarch.rpm
 
 #COPY --from=packager "$JAVA_MINIMAL" "$JAVA_MINIMAL"
 COPY target/snyk-csv-to-pdf-1.0-jar-with-dependencies.jar snyk-csv-to-pdf.jar
-COPY target/classes/snyk.jrxml snyk.jrxml
+COPY design/snyk.jrxml snyk.jrxml
+COPY design/snyk.jasper snyk.jasper
 
 # VOLUME /data
 

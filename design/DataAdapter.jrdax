@@ -2,7 +2,7 @@
 <csvDataAdapter class="net.sf.jasperreports.data.csv.CsvDataAdapterImpl">
   <name>Sample CSV Report Medium</name>
   <dataFile type="repositoryDataLocation">
-    <location>/Users/mconradt/JaspersoftWorkspace/SnykJasperReport/samples/medium.csv</location>
+    <location>/Users/mconradt/JaspersoftWorkspace/snyk-csv-to-pdf-report-converter/samples/medium.csv</location>
   </dataFile>
   <recordDelimiter>
 </recordDelimiter>

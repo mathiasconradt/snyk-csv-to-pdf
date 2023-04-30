@@ -2,9 +2,12 @@ package io.snyk.jasperreports;
 
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRCsvDataSource;
+import net.sf.jasperreports.engine.util.JRLoader;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -38,8 +41,10 @@ public class Main {
             System.exit(1);
             System.out.println();
         }
-        if (!new File("snyk.jrxml").exists()) {
-            System.out.println("snyk.jrxml not found.");
+        boolean jrxmlExists = new File("snyk.jrxml").exists();
+        boolean jasperExists = new File("snyk.jasper").exists();
+        if (!jrxmlExists && !jasperExists) {
+            System.out.println("snyk.jasper or snyk.jrxml not found.");
             System.exit(1);
             System.out.println();
         }
@@ -47,15 +52,19 @@ public class Main {
         Date startTime = Calendar.getInstance().getTime();
         System.out.println("Start: " + startTime);
 
+        // load csv file
         JRCsvDataSource jrDataSource = new JRCsvDataSource(csvFile);
         jrDataSource.setUseFirstRowAsHeader(true);
-        JasperReport report = JasperCompileManager.compileReport("snyk.jrxml");
 
-        /*
-        File initialFile = new File("snyk.jasper");
-        InputStream targetStream = new FileInputStream(initialFile);
-        JasperReport report2 = (JasperReport) JRLoader.loadObject(targetStream);
-        */
+        // if .jasper exists, use the compiled report, otherwise fallback to .jrxml and compile it
+        JasperReport report;
+        if (jasperExists) {
+            File initialFile = new File("snyk.jasper");
+            InputStream targetStream = new FileInputStream(initialFile);
+            report = (JasperReport) JRLoader.loadObject(targetStream);
+        } else {
+            report = JasperCompileManager.compileReport("snyk.jrxml");
+        }
 
         JasperPrint print = JasperFillManager.fillReport(report, new HashMap<>(), jrDataSource);
         String outFilePath = csvFile.getAbsolutePath().toLowerCase().replace(".csv", ".pdf");
