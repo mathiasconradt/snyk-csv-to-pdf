@@ -37,13 +37,10 @@ The build creates a fat jar with all dependencies included.
 java -jar snyk-csv-to-pdf-x.y-jar-with-dependencies.jar </path/to/csv/file.csv>
 ```
 
-Make sure that either the report template `snyk.jrxml` or the compiled report `snyk.jasper` exists in the current directory.
-
 Example:
 ```
 mvn install
-cd design
-java -jar ../target/snyk-csv-to-pdf-1.0-jar-with-dependencies.jar ../samples/small.csv
+java -jar target/snyk-csv-to-pdf-1.0-jar-with-dependencies.jar samples/small.csv
 ```
 
 ## Docker

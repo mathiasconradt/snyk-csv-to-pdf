@@ -41,13 +41,6 @@ public class Main {
             System.exit(1);
             System.out.println();
         }
-        boolean jrxmlExists = new File("snyk.jrxml").exists();
-        boolean jasperExists = new File("snyk.jasper").exists();
-        if (!jrxmlExists && !jasperExists) {
-            System.out.println("snyk.jasper or snyk.jrxml not found.");
-            System.exit(1);
-            System.out.println();
-        }
 
         Date startTime = Calendar.getInstance().getTime();
         System.out.println("Start: " + startTime);
@@ -56,15 +49,9 @@ public class Main {
         JRCsvDataSource jrDataSource = new JRCsvDataSource(csvFile);
         jrDataSource.setUseFirstRowAsHeader(true);
 
-        // if .jasper exists, use the compiled report, otherwise fallback to .jrxml and compile it
-        JasperReport report;
-        if (jasperExists) {
-            File initialFile = new File("snyk.jasper");
-            InputStream targetStream = new FileInputStream(initialFile);
-            report = (JasperReport) JRLoader.loadObject(targetStream);
-        } else {
-            report = JasperCompileManager.compileReport("snyk.jrxml");
-        }
+        // load compiled report from inside jar file
+        InputStream inputStream = Main.class.getResourceAsStream("/snyk.jasper");
+        JasperReport report = (JasperReport) JRLoader.loadObject(inputStream);;
 
         JasperPrint print = JasperFillManager.fillReport(report, new HashMap<>(), jrDataSource);
         String outFilePath = csvFile.getAbsolutePath().toLowerCase().replace(".csv", ".pdf");
