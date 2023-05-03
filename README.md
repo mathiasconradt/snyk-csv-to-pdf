@@ -56,6 +56,12 @@ docker build -t snyk-csv-to-pdf .
 docker run -v $(PWD)/samples:/data/ snyk-csv-to-pdf /data/medium.csv
 ```
 
+If you don't want to build the project yourself but just quickly want to convert an existing csv file, use the pre-built image:
+
+```
+docker run -v $(PWD)/samples:/data/ mathiasconradt/snyk-csv-to-pdf /data/medium.csv
+```
+
 ## Report Template Design
 
 If you want to adjust the report template (snyk.jrxml), you can download the Jaspersoft Studio Community Edition from https://community.jaspersoft.com/project/jaspersoft-studio/releases
