@@ -2,7 +2,7 @@
 
 ### Disclaimer
 
-This project is not an official Snyk offering and not officially supported by Snyk.
+:warning: This project is not an official Snyk offering and not officially supported by Snyk.
 Use at your own risk.
 
 ## Description 
