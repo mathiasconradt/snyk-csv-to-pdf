@@ -7,7 +7,7 @@ Use at your own risk.
 
 ## Description 
 
-PoC to showcase how we envision a performant pdf report generation:
+PoC to showcase a performant pdf report generation:
 - fast performing 
   - 400 issues report: 2 seconds (on Mac Book Pro)
   - 2600 issues report: 4 seconds (on Mac Book Pro)
