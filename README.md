@@ -1,4 +1,4 @@
-# Snyk CVS-to-PDF Report Converter
+# Snyk CSV-to-PDF Report Converter
 
 ### Disclaimer
 
