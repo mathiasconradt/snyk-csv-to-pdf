@@ -2,12 +2,12 @@
 
 ### Disclaimer
 
-This project is not an official Snyk offering and not officially supported by Snyk.
+:warning: This project is not an official Snyk offering and not officially supported by Snyk.
 Use at your own risk.
 
 ## Description 
 
-PoC to showcase how we envision a performant pdf report generation:
+PoC to showcase a performant pdf report generation:
 - fast performing 
   - 400 issues report: 2 seconds (on Mac Book Pro)
   - 2600 issues report: 4 seconds (on Mac Book Pro)
@@ -54,6 +54,12 @@ docker build -t snyk-csv-to-pdf .
 ### Run
 ```
 docker run -v $(PWD)/samples:/data/ snyk-csv-to-pdf /data/medium.csv
+```
+
+If you don't want to build the project yourself but just quickly want to convert an existing csv file, use the pre-built image:
+
+```
+docker run -v $(PWD)/samples:/data/ mathiasconradt/snyk-csv-to-pdf /data/medium.csv
 ```
 
 ## Report Template Design
