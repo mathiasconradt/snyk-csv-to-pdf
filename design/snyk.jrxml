@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.20.3.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cherry_Landscape_1" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a5c9b49-9dc5-422a-ac69-e92cf61ef530">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
 	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="50" isBold="false" pdfFontName="Helvetica"/>
@@ -16,7 +16,7 @@
 		<![CDATA[]]>
 	</queryString>
 	<field name="ISSUE_SEVERITY" class="java.lang.String"/>
-	<field name="PRIORITY_SCORE" class="java.lang.String"/>
+	<field name="SCORE" class="java.lang.String"/>
 	<field name="PROBLEM_TITLE" class="java.lang.String"/>
 	<field name="CVE" class="java.lang.String"/>
 	<field name="CWE" class="java.lang.String"/>
@@ -67,7 +67,7 @@
 					<textElement textAlignment="Left">
 						<font fontName="Arial" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1250" isPdfEmbedded="true"/>
 					</textElement>
-					<text><![CDATA[snyk-csv-to-pdf reporting template by Mathias Conradt & Sebastian Roth]]></text>
+					<text><![CDATA[Created with snyk-csv-to-pdf (https://github.com/mathiasconradt/snyk-csv-to-pdf)]]></text>
 				</staticText>
 			</frame>
 		</band>
@@ -189,7 +189,7 @@
 					<textElement>
 						<font fontName="Arial" size="7"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{PRIORITY_SCORE}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{SCORE}]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight" hyperlinkType="Reference" hyperlinkTarget="Blank">
 					<reportElement style="Detail" positionType="Float" x="64" y="0" width="116" height="18" uuid="d77b24bd-8ae4-4068-a3b8-aa2003209420">

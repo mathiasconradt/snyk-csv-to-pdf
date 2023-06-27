@@ -67,7 +67,7 @@
 					<textElement textAlignment="Left">
 						<font fontName="Arial" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1250" isPdfEmbedded="true"/>
 					</textElement>
-					<text><![CDATA[snyk-csv-to-pdf reporting template by Mathias Conradt & Sebastian Roth]]></text>
+					<text><![CDATA[Created with snyk-csv-to-pdf (https://github.com/mathiasconradt/snyk-csv-to-pdf)]]></text>
 				</staticText>
 			</frame>
 		</band>
