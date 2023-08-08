@@ -13,7 +13,7 @@
   <queryExecuterMode>false</queryExecuterMode>
   <columnNames>ISSUE_SEVERITY_RANK</columnNames>
   <columnNames>ISSUE_SEVERITY</columnNames>
-  <columnNames>PRIORITY_SCORE</columnNames>
+  <columnNames>SCORE</columnNames>
   <columnNames>PROBLEM_TITLE</columnNames>
   <columnNames>CVE</columnNames>
   <columnNames>CWE</columnNames>
