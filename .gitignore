@@ -33,4 +33,4 @@ target
 bin
 
 samples/large.pdf
-docker-build-and-publish.sh
+# docker-build-and-publish.sh
